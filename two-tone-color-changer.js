@@ -33,8 +33,8 @@ const button3 = document.createElement(`button`);
 body.appendChild(button3);
 button3.innerText = `Change to Random Color!`;
 button3.addEventListener(`click`, () => {
-  const randColorIdx = Math.floor(Math.random() * colors.length);
+  const randColorIdx = Math.floor(Math.random() * 1000000);
   console.log(randColorIdx);
   randDiv = document.querySelector(`#random-color`);
-  randDiv.style.backgroundColor = colors[randColorIdx];
+  randDiv.style.backgroundColor = `#${randColorIdx}`;
 });
